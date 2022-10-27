@@ -1,0 +1,25 @@
+framework: ace_pp
+language: en
+graph_mode: labeled-edge
+
+encoder: /cluster/work/projects/ec30/huiliny/xlm-roberta-large # local directory to xlmr
+epochs: 200
+n_layers: 3
+query_length: 2
+decoder_learning_rate: 1.0e-4
+encoder_learning_rate: 6.0e-6            # initial encoder learning rate
+encoder_weight_decay: 0.1
+encoder_delay_steps: 500
+warmup_steps: 1000
+char_embedding: true
+dropout_word: 0.1
+focal: true
+hidden_size_edge_presence: 256
+hidden_size_anchor: 256
+dropout_anchor: 0.4
+dropout_edge_presence: 0.5
+dropout_label: 0.85
+batch_size: 16
+dropout_transformer: 0.25
+beta_2: 0.98
+layerwise_lr_decay: 0.9
