@@ -71,7 +71,7 @@ sh convert_to_mrp.sh <DATASET>
 
 - Raw format
 
-```json
+```
 {'sent_id': 'bc/CNN_IP_20030329.1600.02/001',
  'text': 'It was in northern Iraq today that an eight artillery round hit the site occupied by Kurdish fighters near Chamchamal',
  'events': [{'event_type': 'Attack',
@@ -85,7 +85,7 @@ sh convert_to_mrp.sh <DATASET>
 
 - MRP format
 
-```json
+```
 {'id': 'bc/CNN_IP_20030329.1600.02/001',
  'flavor': 1,
  'framework': 'ace',
